@@ -48,6 +48,16 @@ class Jobs(ABC):
         """
         raise NotImplementedError
 
+    @staticmethod
+    def _add_addtional_specs(specifications: list[Specifications]) -> str:
+        if not specifications:
+            return ""
+
+        specs = "\n".join([f"- {spec.value}" for spec in specifications])
+        specs = f"\nIn addition, the result must obey the specifications:\n{specs}"
+
+        return specs
+
 
 class CodeJobs(Jobs):
     @staticmethod
@@ -287,13 +297,3 @@ class CodeJobs(Jobs):
             Code (before transpiling):\
             """
         )
-
-    @staticmethod
-    def _add_addtional_specs(specifications: list[Specifications]) -> str:
-        if not specifications:
-            return ""
-
-        specs = "\n".join([f"- {spec.value}" for spec in specifications])
-        specs = f"\nIn addition, the result must obey the specifications:\n{specs}"
-
-        return specs

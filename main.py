@@ -59,7 +59,7 @@ if __name__ == "__main__":
         specs = gr.CheckboxGroup(
             [spec for spec in Specifications._member_names_],
             value=None,
-            label="What specifications do you want to add?",
+            label="What specifications do you want to add? (sometimes ignored)",
         )
 
         with gr.Tab(label="Refactoring"):
