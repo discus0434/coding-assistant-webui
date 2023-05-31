@@ -109,12 +109,12 @@ def build_webui():
                     inp = gr.Textbox(
                         placeholder="Paste your code here",
                         lines=10,
-                        max_lines=500,
+                        max_lines=1500,
                         label="Input code",
                     )
                     btn = gr.Button("Generate")
                 with gr.Column():
-                    out = gr.Textbox(label="Output")
+                    out = gr.Textbox(label="Output", max_lines=1500)
                     btn.click(
                         fn=GradioInterface(job="REFACTORING").generate,
                         inputs=[model, temperature, max_tokens, specs, inp],
@@ -128,13 +128,13 @@ def build_webui():
                     inp = gr.Textbox(
                         placeholder="Paste your code here",
                         lines=10,
-                        max_lines=500,
+                        max_lines=1500,
                         label="Input code",
                     )
                     btn = gr.Button("Generate")
 
                 with gr.Column():
-                    out = gr.Textbox(label="Output")
+                    out = gr.Textbox(label="Output", max_lines=1500)
                     btn.click(
                         fn=GradioInterface(job="EXPLAINING").generate,
                         inputs=[model, temperature, max_tokens, specs, inp],
@@ -148,13 +148,13 @@ def build_webui():
                     inp = gr.Textbox(
                         placeholder="Paste your code here",
                         lines=10,
-                        max_lines=500,
+                        max_lines=1500,
                         label="Input code",
                     )
                     btn = gr.Button("Generate")
 
                 with gr.Column():
-                    out = gr.Textbox(label="Output")
+                    out = gr.Textbox(label="Output", max_lines=1500)
                     btn.click(
                         fn=GradioInterface(job="CHECKING").generate,
                         inputs=[model, temperature, max_tokens, specs, inp],
@@ -168,7 +168,7 @@ def build_webui():
                     inp = gr.Textbox(
                         placeholder="Paste your code here",
                         lines=10,
-                        max_lines=500,
+                        max_lines=1500,
                         label="Input code",
                     )
 
@@ -182,7 +182,7 @@ def build_webui():
                     btn = gr.Button("Generate")
 
                 with gr.Column():
-                    out = gr.Textbox(label="Output")
+                    out = gr.Textbox(label="Output", max_lines=1500)
                     btn.click(
                         fn=GradioInterface(job="ADDING").generate,
                         inputs=[
@@ -238,7 +238,7 @@ def build_webui():
                     btn = gr.Button("Generate")
 
                 with gr.Column():
-                    out = gr.Textbox(label="Output")
+                    out = gr.Textbox(label="Output", max_lines=1500)
                     btn.click(
                         fn=GradioInterface(job="IMPLEMENTING").generate,
                         inputs=[
@@ -262,7 +262,7 @@ def build_webui():
                     inp = gr.Textbox(
                         placeholder="Paste your code here",
                         lines=10,
-                        max_lines=500,
+                        max_lines=1500,
                         label="Input code",
                     )
 
@@ -283,7 +283,7 @@ def build_webui():
                     btn = gr.Button("Generate")
 
                 with gr.Column():
-                    out = gr.Textbox(label="Output")
+                    out = gr.Textbox(label="Output", max_lines=1500)
                     btn.click(
                         fn=GradioInterface(job="TRANSPILING").generate,
                         inputs=[
