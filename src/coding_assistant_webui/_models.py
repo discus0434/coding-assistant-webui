@@ -5,8 +5,8 @@ from typing import Union
 
 import guidance
 
-from coding_assistant_webui.jobs import CodeJobs
-from coding_assistant_webui.specifications import Specifications
+from coding_assistant_webui._jobs import CodeJobs
+from coding_assistant_webui._specifications import Specifications
 
 
 class ModelNames(Enum):
@@ -149,7 +149,9 @@ class CodeModel(BaseModel):
         **kwargs,
     ) -> str:
         # 1. Get the code specification according to the job
-        specification = CodeJobs.job_to_func(job)(specifications=specifications, **kwargs)
+        specification = CodeJobs.job_to_func(job)(
+            specifications=specifications, **kwargs
+        )
 
         # 2. If the job needs code as `base_input`, add a code block
         if CodeJobs.job_need_base_input(job):

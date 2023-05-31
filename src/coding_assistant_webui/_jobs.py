@@ -2,7 +2,7 @@ import inspect
 from abc import ABC, abstractstaticmethod
 from typing import Callable
 
-from coding_assistant_webui.specifications import Specifications
+from coding_assistant_webui._specifications import Specifications
 
 
 class Jobs(ABC):
@@ -98,7 +98,7 @@ class CodeJobs(Jobs):
 
         Parameters
         ----------
-        specifications: list[Specifications]
+        specifications: list[Specifications], optional
             The specifications to add to the prompt.
         """
         specs = CodeJobs._add_addtional_specs(specifications)
@@ -122,7 +122,7 @@ class CodeJobs(Jobs):
 
         Parameters
         ----------
-        specifications: list[Specifications]
+        specifications: list[Specifications], optional
             The specifications to add to the prompt.
         """
         specs = CodeJobs._add_addtional_specs(specifications)
@@ -146,7 +146,7 @@ class CodeJobs(Jobs):
 
         Parameters
         ----------
-        specifications: list[Specifications]
+        specifications: list[Specifications], optional
             The specifications to add to the prompt.
         """
         specs = CodeJobs._add_addtional_specs(specifications)
@@ -170,7 +170,7 @@ class CodeJobs(Jobs):
 
         Parameters
         ----------
-        specifications: list[Specifications]
+        specifications: list[Specifications], optional
             The specifications to add to the prompt.
         requirements: str
             The requirements of the newly added feature.
@@ -209,7 +209,7 @@ class CodeJobs(Jobs):
 
         Parameters
         ----------
-        specifications: list[Specifications]
+        specifications: list[Specifications], optional
             The specifications to add to the prompt.
         requirements: str
             The requirements of the newly implemented code.
