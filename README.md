@@ -35,7 +35,7 @@ source ~/.bashrc
 rye sync
 ```
 
-3. Allocate `OPENAI_API_KEY` in `./.env`
+3. Place `OPENAI_API_KEY` in `./.env`
 
 ## Usage
 
