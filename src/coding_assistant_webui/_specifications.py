@@ -14,4 +14,4 @@ class Specifications(Enum):
     DOCSTRING: str = "add a docstring to each functions and classes in **NUMPY STYLE**. You must write NUMPY STYLE DocString, NEVER Google style."
     TYPE_ANNOTATION: str = "add type annotations to the code. You can suppose that the code is written in Python 3.10."
     NO_NATURAL_LANGS: str = "**YOU MUST NOT OUTPUT ANYTHING ELSE THAT ARE NOT RELATED TO THE CODE ITSELF.**"
-    WRITE_IN_JAPANESE: str = "write the entire comment, docstring, and explanation in Japanese. English is prohibited."
+    WRITE_IN_JAPANESE: str = "write the entire comment, docstring, and explanation in Japanese. In addition, you MUST NOT repeat user's input in Japanese."
