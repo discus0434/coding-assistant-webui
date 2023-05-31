@@ -170,8 +170,6 @@ class CodeModel(BaseModel):
             f"""\
             {{{{#system~}}}}
             You are a helpful assistant.
-            You must answer the question in {"Japanese" if kwargs.get('lang', 'en') == 'ja' else "English"},
-            whichever the language of user's question is.
             {{{{~/system}}}}
             {{{{#user~}}}}
             {specification}
