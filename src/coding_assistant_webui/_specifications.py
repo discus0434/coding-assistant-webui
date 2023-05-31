@@ -10,7 +10,8 @@ class Specifications(Enum):
     very strong tone, which is quite odd though.
     """
 
-    COMMENT: str = "added a comment to the code to explain what it does, to make it easier to understand."
-    DOCSTRING: str = "added a docstring to each functions and classes in **NUMPY STYLE**. You must write NUMPY STYLE DocString, NEVER Google style."
-    TYPE_ANNOTATION: str = "added type annotations to the code. You can suppose that the code is written in Python 3.10."
-    NO_NATURAL_LANGS: str = "**YOU MUST NOT OUTPUT EXAMPLES OR ANYTHING ELSE THAT ARE NOT RELATED TO THE CODE ITSELF.**"
+    COMMENT: str = "add a comment to the code to explain what it does, to make it easier to understand."
+    DOCSTRING: str = "add a docstring to each functions and classes in **NUMPY STYLE**. You must write NUMPY STYLE DocString, NEVER Google style."
+    TYPE_ANNOTATION: str = "add type annotations to the code. You can suppose that the code is written in Python 3.10."
+    NO_NATURAL_LANGS: str = "**YOU MUST NOT OUTPUT ANYTHING ELSE THAT ARE NOT RELATED TO THE CODE ITSELF.**"
+    WRITE_IN_JAPANESE: str = "write the entire comment, docstring, and explanation in Japanese. English is prohibited."
