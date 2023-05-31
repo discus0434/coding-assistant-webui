@@ -24,16 +24,16 @@ class BaseModel(ABC):
     """Base class for generation.
 
     This class does 2 things:
-    1. It initializes the model with Microsoft guidance.
-    2. According to the job, it initializes the prompt and throw it to
-    the model.
+    1. Initializes the model with Microsoft guidance.
+    2. According to the job, initializes the prompt and throw it to
+    LLM.
 
     Attributes
     ----------
     llm: guidance.llms.OpenAI
         The model to use for generation.
         You can use models listed in
-        `coding_assistant.models.ModelNames`.
+        `coding_assistant._models.ModelNames`.
     """
 
     def __init__(
@@ -131,7 +131,7 @@ class CodeModel(BaseModel):
     llm: guidance.llms.OpenAI
         The model used for code generation.
         You can use models listed in
-        `coding_assistant.models.ModelNames`.
+        `coding_assistant._models.ModelNames`.
     """
 
     def __init__(
