@@ -103,6 +103,7 @@ def build_webui():
         )
 
         with gr.Tab(label="Refactoring"):
+            gr.Markdown("### Refactor the code to make it more readable.")
             with gr.Row():
                 with gr.Column():
                     inp = gr.Textbox(
@@ -121,6 +122,7 @@ def build_webui():
                     )
 
         with gr.Tab(label="Explaining"):
+            gr.Markdown("### Let LLM explain the code.")
             with gr.Row():
                 with gr.Column():
                     inp = gr.Textbox(
@@ -140,6 +142,7 @@ def build_webui():
                     )
 
         with gr.Tab(label="Checking"):
+            gr.Markdown("### Let LLM check the issues in the code.")
             with gr.Row():
                 with gr.Column():
                     inp = gr.Textbox(
@@ -159,6 +162,7 @@ def build_webui():
                     )
 
         with gr.Tab(label="Adding"):
+            gr.Markdown("### Add a new feature to the code, based on the input requirements and code.")
             with gr.Row():
                 with gr.Column():
                     inp = gr.Textbox(
@@ -193,6 +197,7 @@ def build_webui():
                     )
 
         with gr.Tab(label="Implementing"):
+            gr.Markdown("### Implement a new feature to the code, based on the input requirements.")
             with gr.Row():
                 with gr.Column():
                     inp = gr.Textbox(
@@ -251,6 +256,7 @@ def build_webui():
                     )
 
         with gr.Tab(label="Transpiling"):
+            gr.Markdown("### Transpile the code to a different language.")
             with gr.Row():
                 with gr.Column():
                     inp = gr.Textbox(
