@@ -1,4 +1,4 @@
-# Coding Assistant
+# Coding Assistant WebUI
 
 A simple coding assistant app powered by [Microsoft guidance](https://github.com/microsoft/guidance), OpenAI LLMs, and [Gradio](https://github.com/gradio-app/gradio).
 
