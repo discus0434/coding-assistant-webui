@@ -33,7 +33,7 @@ class BaseModel(ABC):
     llm: guidance.llms.OpenAI
         The model to use for generation.
         You can use models listed in
-        `coding_assistant._models.ModelNames`.
+        `coding_assistant_webui._models.ModelNames`.
     """
 
     def __init__(
@@ -131,7 +131,7 @@ class CodeModel(BaseModel):
     llm: guidance.llms.OpenAI
         The model used for code generation.
         You can use models listed in
-        `coding_assistant._models.ModelNames`.
+        `coding_assistant_webui._models.ModelNames`.
     """
 
     def __init__(

@@ -4,10 +4,12 @@ from enum import Enum
 class Specifications(Enum):
     """Enum for specifications to add to the prompt.
 
-    If you want to another specification, you can add it to this enum.
-    The specification is sometimes ignored by the model.
-    If you make the model sure to follow the specification, you may use
-    very strong tone, which is quite odd though.
+
+    If you want another specification, all you need is add it to this
+    enum.
+    Note that the specification is sometimes ignored by the model. If
+    you make the model sure to follow the specification, you may
+    speak in a very strong tone, which is quite odd though.
     """
 
     COMMENT: str = "add a comment to the code to explain what it does, to make it easier to understand."
